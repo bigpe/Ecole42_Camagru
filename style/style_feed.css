@@ -1,0 +1,18 @@
+#gallery #comment_frame{
+    width: 380px;
+    height: 80px;
+    margin-top: 310px;
+    border: none;
+}
+#comment_frame{
+    background: white;
+    height: 98px;
+    width: 390px;
+    border: none;
+    position: absolute;
+    margin-top: 282px;
+}
+#comment_frame::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
