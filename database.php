@@ -6,9 +6,9 @@
 
         public function __construct()
         {
-            $DB_DSN = "mysql:dbname=Camagru;host=37.204.240.149;port=3307";
-            $DB_USER = "root";
-            $DB_PASSWORD = "root";
+            $DB_DSN = "mysql:dbname=YOUR_DB_NAME;host=YOUR_HOST;port=YOUR_PORT";
+            $DB_USER = "YOUR_USER";
+            $DB_PASSWORD = "YOUR_PASS";
             $this->db = new PDO($DB_DSN, $DB_USER, $DB_PASSWORD, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         }
         public function db_read($query)

@@ -11,13 +11,13 @@ function send_mail($email, $msg)
     $mail = new PHPMailer;
     $mail->isSMTP();
     $mail->SMTPDebug = 0;
-    $mail->Host = "smtp.yandex.ru";
+    $mail->Host = "smtp.yandex.ru"; //For Example, Yandex.ru mail settings
     $mail->Port = 587;
     $mail->SMTPSecure = 'tls';
     $mail->SMTPAuth = true;
-    $mail->Username = 'bigpewm@yandex.ru';
-    $mail->Password = 'ship0123';
-    $mail->setFrom('bigpewm@yandex.ru', 'Camagru');
+    $mail->Username = 'YOUR_MAIL';
+    $mail->Password = 'YOUR PASS';
+    $mail->setFrom('YOUR_MAIL', 'Camagru');
     $mail->addAddress("$email");
     $mail->Subject = 'Camagru System Message';
     $mail->msgHTML($msg);
